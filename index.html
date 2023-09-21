@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css" />
+</head>
+
+<body>
+    <!-- <div>
+        <input type="text" id="date" />
+    </div> -->
+    <div style="margin-top: 10px;">
+        <label for="start"> Start Date</label>
+        <input type="text" style="width:250px;" id="start" />
+        <label for="end" style="width: 250px;">End Date</label>
+        <input type="text" id="end" />
+    </div>
+
+    <script src="https://unpkg.com/js-datepicker"></script>
+    <script>
+        const date = datepicker('#date');
+        const start = datepicker('#start', { id: 1, alwaysShow: true })
+        const end = datepicker('#end', { id: 1, alwaysShow: true })
+        console.log("inside javascript", date)
+    </script>
+</body>
+
+</html>
